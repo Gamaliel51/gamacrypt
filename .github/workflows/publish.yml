@@ -4,12 +4,12 @@
 name: Publish
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       -master
 
 jobs:
-  push:
+  test:
     name: publish
     runs-on: ubuntu-latest
     steps:

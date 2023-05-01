@@ -16,7 +16,6 @@
   "author": "Ndukwe Miracle",
   "license": "ISC",
   "dependencies": {
-    "blowfish": "^1.0.1",
     "crypto": "^1.0.1",
     "jest": "^29.5.0"
   },
