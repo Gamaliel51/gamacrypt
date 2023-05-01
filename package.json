@@ -1,0 +1,26 @@
+{
+  "name": "gamacrypt",
+  "version": "1.0.0",
+  "description": "An npm library for encryption, decryption and compression of string and byte data. Encryption and Decryption are done in AES",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "keywords": [
+    "encryption",
+    "decryption",
+    "compression",
+    "data",
+    "streams"
+  ],
+  "author": "Ndukwe Miracle",
+  "license": "ISC",
+  "dependencies": {
+    "blowfish": "^1.0.1",
+    "crypto": "^1.0.1",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1"
+  }
+}
