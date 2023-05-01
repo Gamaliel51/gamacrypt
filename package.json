@@ -1,6 +1,6 @@
 {
   "name": "gamacrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An npm library for encryption, decryption and compression of string and byte data. Encryption and Decryption are done in AES",
   "main": "index.js",
   "scripts": {
