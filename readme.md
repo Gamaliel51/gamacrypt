@@ -1,7 +1,7 @@
 # GAMACRYPT USAGE:
 
 ### Encrypting text:
-** When encrypting text using the gamacrypt library, simply import the encryptAES function and use as shown below: **
+When encrypting text using the gamacrypt library, simply import the encryptAES function and use as shown below: 
 
 ```
 const gamacrypt = require('gamacrypt')
@@ -26,7 +26,7 @@ console.log(encryptedText)
 
 
 ### Decrypting text:
-** When decrypting text using the gamacrypt library, simply import the decryptAES function and use as shown below: **
+When decrypting text using the gamacrypt library, simply import the decryptAES function and use as shown below: 
 
 ```
 const gamacrypt = require('gamacrypt')
@@ -51,7 +51,7 @@ console.log(decryptedText)
 
 ### Compressing and Decompressing Data Streams
 
-** In order to compress or decompress data streams use the compress and decompress functions.**
+In order to compress or decompress data streams use the compress and decompress functions.
 
 ```
 
@@ -68,7 +68,7 @@ decompress(read, write)
 
 ```
 
-** It can also be used in various situations like http streams in servers. Example: **
+It can also be used in various situations like http streams in servers. Example: 
 
 
 ```
@@ -89,7 +89,7 @@ app.get('/', (req, res) => {
 
 ### Encrypting and Decrypting Data Streams
 
-** In order to encrypt or decrypt data streams. use the initialize an object from the AES class and use the encryptStream and decryptStream  methods. Example: **
+In order to encrypt or decrypt data streams. use the initialize an object from the AES class and use the encryptStream and decryptStream  methods. Example: 
 
 ```
 
@@ -109,7 +109,7 @@ read.pipe(cryptObj.decryptStream()).pipe(write)
 
 ```
 
-** Same as above, It can also be used in various situations like http streams in servers. Example: **
+Same as above, It can also be used in various situations like http streams in servers. Example: 
 
 ```
 
@@ -133,8 +133,8 @@ app.get('/', (req, res) => {
 
 ### Encrypting , Decrypyting, Compressing and Decompressing at the same time
 
-** In order to encrypt and compress a data stream or to decrypt and decompress a data stream use the 
-gamacryptAES and degamacryptAES functions respectively **
+In order to encrypt and compress a data stream or to decrypt and decompress a data stream use the 
+gamacryptAES and degamacryptAES functions respectively 
 
 ```
 
@@ -151,7 +151,7 @@ degamacryptAES(read, write)
 
 ```
 
-** Same as above, It can also be used in various situations like http streams in servers. Example: **
+Same as above, It can also be used in various situations like http streams in servers. Example: 
 
 
 ```
