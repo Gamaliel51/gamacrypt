@@ -9,9 +9,11 @@ on:
       -master
 
 jobs:
-  release:
+  build:
+    name: builder
     runs-on: ubuntu-latest
     steps:
+      - name: build up
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -20,9 +22,11 @@ jobs:
       - run: npm test
 
   publish-npm:
-    needs: release
+    name: publisher
+    needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: publish 1
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
